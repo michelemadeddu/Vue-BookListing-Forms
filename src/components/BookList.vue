@@ -15,10 +15,13 @@ import BookForm from "./BookForm";
 
 export default {
   name: "BookList",
+
   data() {
     return {
       title: "All Books",
+
       states: ["Want to Read", "Read", "Reading"],
+
       books: [
         { title: "Self-Reliance", author: "Ralph Waldo Emerson" },
         { title: "American Gods", author: "Neil Gaiman" },
@@ -26,10 +29,12 @@ export default {
       ]
     };
   },
+
   components: {
     BookItem,
     BookForm
   },
+
   methods: {
     appendBook(bookTitle, bookAuthor) {
       this.books.push({ title: bookTitle, author: bookAuthor });
